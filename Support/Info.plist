@@ -18,49 +18,29 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
-
-	<key>UILaunchScreen</key>
-	<dict/>
-
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-
-	<!--
-		Broadside is self-hosted, so the server is whatever address the person
-		using this app runs it on. A great many of those are a machine on the
-		house network reached over plain HTTP, and refusing to talk to one would
-		make the app useless to exactly the people it is for.
-
-		NSAllowsLocalNetworking permits that, and only that: unencrypted requests
-		to local network addresses and .local names. Anything reached over the
-		public internet still has to be HTTPS. That is the narrow exception
-		Apple documents for this situation, and unlike NSAllowsArbitraryLoads it
-		does not need a written justification at review.
-	-->
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
-
-	<key>NSLocalNetworkUsageDescription</key>
-	<string>Broadside needs to reach your own server when it is on the same network as this device.</string>
-
 	<key>NSCameraUsageDescription</key>
 	<string>Take a photograph to put straight into a post.</string>
-
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Broadside needs to reach your own server when it is on the same network as this device.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Save a photograph from one of your posts back to this device.</string>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
 </dict>
 </plist>
