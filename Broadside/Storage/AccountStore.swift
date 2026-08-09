@@ -11,7 +11,7 @@ import Observation
 @MainActor
 @Observable
 final class AccountStore {
-    private static let service = "net.thebytes.broadside"
+    private static let service = "io.bytestud.broadside"
     private static let tokenKey = "api-token"
     private static let serverKey = "server-url"
 

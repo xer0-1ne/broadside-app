@@ -45,7 +45,7 @@ final class MediaUploader {
     /// there is nowhere else for it to live.
     static let shared = MediaUploader()
 
-    static let sessionIdentifier = "net.thebytes.broadside.uploads"
+    static let sessionIdentifier = "io.bytestud.broadside.uploads"
 
     private(set) var jobs: [UploadJob] = []
 

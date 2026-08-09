@@ -20,13 +20,21 @@ under Signing & Capabilities and it builds.
 
 | | |
 |---|---|
-| Minimum iOS | 18.0 |
+| Minimum iOS | 17.6 |
 | Swift | 6, strict concurrency |
 | Dependencies | none |
-| Bundle identifier | `net.thebytes.broadside` |
+| Bundle identifier | `io.bytestud.broadside` |
+| Name on the App Store | Broadside Blog |
+| Name on the home screen | Broadside |
+| Project page | <https://bytestud.io/projects/broadside> |
 
-Change the bundle identifier before submitting, or App Store Connect will refuse
-a name that belongs to somebody else.
+The two names differ on purpose. "Broadside Blog" says what it is to somebody
+scrolling the App Store, and the home screen truncates at around twelve
+characters, so the shorter one is what fits under the icon.
+
+The deployment target is 17.6 rather than 18. Anything reaching for an iOS 18
+API has to have a fallback or the build fails, which is what `HomeView` is
+doing with `.tabItem` instead of the newer `Tab` type.
 
 ## How it connects
 
