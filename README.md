@@ -1,6 +1,6 @@
 # The iOS app
 
-A native SwiftUI client for a [Broadside](https://git.thebytes.net/roberts/broadside)
+A native SwiftUI client for a [Broadside](https://git.thebytes.net/broadside/broadside)
 server. It talks to the same HTTP API that n8n or a shell script would, so it is
 a first-party client rather than a privileged one, and anything it can do is
 something you could do with `curl`.
