@@ -1,0 +1,67 @@
+# ---- Xcode ------------------------------------------------------------------
+
+# Per-user window positions, breakpoints, and the last scheme somebody had
+# selected. The shared scheme in xcshareddata IS committed, because that is what
+# makes "xcodebuild -scheme Broadside" work on a machine that has never opened
+# the project.
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# Build output. Xcode puts this outside the repository by default, but a
+# workspace configured for a local build directory would put it here.
+DerivedData/
+*.xcarchive
+*.ipa
+*.dSYM.zip
+
+# Swift Package Manager's local state. There are no package dependencies today
+# and adding one should be a deliberate decision, but this keeps the resolved
+# state of somebody's local experiment out of the history.
+.swiftpm/
+.build/
+
+# Signing material. A provisioning profile or a certificate in a repository is
+# a credential in a repository.
+*.mobileprovision
+*.provisionprofile
+*.p12
+*.cer
+*.certSigningRequest
+
+# ---- Coding assistants ------------------------------------------------------
+
+# Local tool configuration and session state, which belongs to whoever is
+# working on the project rather than to the project.
+.claude/
+.claude.json
+.claude.local.json
+CLAUDE.local.md
+.aider*
+.cursor/
+.cursorrules
+.windsurf/
+.continue/
+.codeium/
+
+# Working notes and design documents, which go stale faster than anyone
+# updates them.
+context.md
+.context.md
+NOTES.md
+TODO.md
+scratch/
+scratchpad/
+
+# ---- Editors and operating systems -----------------------------------------
+
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS drops these into every directory it touches.
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
